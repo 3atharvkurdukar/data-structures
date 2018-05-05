@@ -72,7 +72,7 @@ public:
         int index = search(num);        //Search for index of element
         if (index == -1)                //if -1, it is not in array
         {
-            cout << "Element not found\n";
+            cout << num <<" not found\n";
         }
         else
         {
@@ -104,9 +104,9 @@ int main()
     a1.insert(18, 1);
     a1.traverse();
     if(a1.search(18) != -1)
-        cout << "Element found!" << '\n';
+        cout << "18 found!" << '\n';
     else
-        cout << "Element not found!" << '\n';
+        cout << "18 not found!" << '\n';
     a1.remove(10);
     a1.traverse();
 

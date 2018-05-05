@@ -12,7 +12,7 @@ private:
     int *arr;                       //The dynamic array to hold values
 
 public:
-    MyStack (int c)                 //Constructor for initoializing stack
+    MyStack (int c)                 //Constructor for initializing stack
     {
         top = -1;
         capacity = c;
@@ -80,7 +80,7 @@ int main()
     MyStack s1 = MyStack(size);
 
     //Menu driven program
-    do
+    while(1)
     {
         cout << "\n\t" << "+ - - -MENU- - - +" << '\n';
         cout << "\t| 1. Push element|" << '\n';
@@ -108,7 +108,7 @@ int main()
                 return 0;
                 break;
         }
-    } while(1);
+    }
 
     return 0;
 }
