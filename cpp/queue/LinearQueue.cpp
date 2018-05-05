@@ -12,20 +12,20 @@ private:
     int *arr;                           //Dynamic array
 
 public:
-    LinearQueue (int cap)               //Constructor for initializing stack
+    LinearQueue (int cap)               //Constructor for initializing queue
     {
         capacity = cap;
         front  = rear = -1;
         arr = new int[capacity];        //Dynamic memory allocation
     }
-    int isEmpty()                       //To check if stack is empty
+    int isEmpty()                       //To check if queue is empty
     {
         if (front == -1 && rear == -1)
             return 1;                   //Returns 1 if empty
         else
             return 0;                   //Returns 0 if empty
     }
-    int isFull()                        //To check if stack is empty
+    int isFull()                        //To check if queue is empty
     {
         if (rear == capacity-1)
             return 1;                   //Returns 1  if full

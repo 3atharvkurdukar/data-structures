@@ -1,4 +1,4 @@
-//This program represents "linear queue" as an abstract data type.
+//This program represents "circular queue" as an abstract data type.
 //In this, the main() function demonstrates menu-driven approach.
 
 #include <iostream>
@@ -83,7 +83,7 @@ int main()
     int size, choice, num;
     cout << "Enter the size of queue : ";
     cin >> size;
-    CircularQueue lq = CircularQueue(size);
+    CircularQueue cq = CircularQueue(size);
 
     cout << "\n\t" << "+ - - - -MENU- - - - +" << '\n';
     cout << "\t| 1. Insert element  |" << '\n';
@@ -102,13 +102,13 @@ int main()
             case 1 :
                 cout << "Enter the number : " << '\t';
                 cin >> num;
-                lq.insert(num);
+                cq.insert(num);
                 break;
             case 2 :
-                lq.remove();
+                cq.remove();
                 break;
             case 3 :
-                lq.display();
+                cq.display();
                 break;
             case 4 :
                 cout << "Bye bye..." << '\n';
